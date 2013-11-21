@@ -1,0 +1,40 @@
+
+section {
+	@include outer-container;
+	aside { @include span-columns(3); }
+	article { @include span-columns(9); }
+	background:red;
+	@include media($cinema){
+		background:black;
+	}
+	@include media($tablet){
+		background:pink;
+		aside { @include span-columns(6); }
+		article { @include span-columns(6); }
+	}
+	@include media($mobile) {
+		background:green;
+		aside { @include span-columns(12); }
+		article { @include span-columns(12); }
+	}
+}
+
+section#second {
+	@include outer-container;
+	aside { @include span-columns(6); }
+	article { @include span-columns(6); }
+	@include media($cinema){
+		background:black;
+	}
+	@include media($tablet){
+		background:pink;
+		aside { @include span-columns(1); }
+		article { @include span-columns(11); }
+	}
+	@include media($mobile) {
+		background:green;
+		aside { @include span-columns(12); }
+		article { @include span-columns(12); }
+	}
+}
+

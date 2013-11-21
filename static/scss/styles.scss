@@ -1,0 +1,34 @@
+
+@import 'vendor/bourbon/bourbon';
+@import 'vendor/neat/neat';
+
+@import 'vars/vars';
+
+@import 'extras/extras';
+@import 'vendor/bootstrap-3/bootstrap-3';
+@import 'layouts/layouts';
+
+::selection {
+    background: transparentize($white, 0.1);
+    color: $black;
+    text-shadow: none;
+}
+
+html, body, *, input, textarea {
+    -webkit-font-smoothing: antialiased;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    // background-color: $white;
+    color: $black;
+    font-family: "Lato" , Arial;
+}
+
+
+@import "includes/header",
+		"includes/footer",
+		"includes/sidebar";
+
+
