@@ -1,5 +1,5 @@
 
-section {
+section#show {
 	@include outer-container;
 	aside { @include span-columns(3); }
 	article { @include span-columns(9); }
@@ -19,22 +19,41 @@ section {
 	}
 }
 
-section#second {
+section#elements {
 	@include outer-container;
-	aside { @include span-columns(6); }
-	article { @include span-columns(6); }
-	@include media($cinema){
-		background:black;
+	> main {
+		@include span-columns(9);
+		@include pad();
 	}
-	@include media($tablet){
-		background:pink;
-		aside { @include span-columns(1); }
-		article { @include span-columns(11); }
+	> aside {
+		@include span-columns(3);
+		@include pad();
+	}
+	@include media($cinema) {
+		> main {
+			@include span-columns(10);
+		}
+		> aside {
+			@include span-columns(2);
+		}
+	}
+	@include media($tablet) {
+		> main {
+			@include span-columns(8);
+		}
+		> aside {
+			@include span-columns(4);
+		}
 	}
 	@include media($mobile) {
-		background:green;
-		aside { @include span-columns(12); }
-		article { @include span-columns(12); }
+		> main {
+			@include fill-parent;
+			@include pad();
+		}
+		> aside {
+			@include fill-parent;
+			@include pad();
+		}
 	}
 }
 

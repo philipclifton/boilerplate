@@ -1,18 +1,20 @@
 
+// Frameworks
 @import 'vendor/bourbon/bourbon';
 @import 'vendor/neat/neat';
 
+// Settings
 @import 'vars/vars';
 
+// 3rd-Party Libs
 @import 'extras/extras';
 @import 'vendor/bootstrap-3/bootstrap-3';
-@import 'layouts/layouts';
 
 ::selection {
-    background: transparentize($white, 0.1);
-    color: $black;
     text-shadow: none;
 }
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
 
 html, body, *, input, textarea {
     -webkit-font-smoothing: antialiased;
@@ -21,14 +23,13 @@ html, body, *, input, textarea {
 html, body {
     height: 100%;
     width: 100%;
-    // background-color: $white;
-    color: $black;
-    font-family: "Lato" , Arial;
+    font-family: "Open Sans" , Arial;
 }
 
-
+@import 'typography';
+@import 'layouts/layouts';
 @import "includes/header",
-		"includes/footer",
-		"includes/sidebar";
+        "includes/footer",
+        "includes/sidebar";
 
 

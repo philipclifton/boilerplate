@@ -1,3 +1,4 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
 * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary { display: block; }
@@ -258,46 +259,60 @@ textarea.input-lg { height: auto; }
 .form-horizontal .form-group:after { clear: both; }
 @media (min-width: 768px) { .form-horizontal .control-label { text-align: right; } }
 
-section { max-width: 68em; margin-left: auto; margin-right: auto; background: red; }
-section:before, section:after { content: " "; /* 1 */ display: table; /* 2 */ }
-section:after { clear: both; }
-section aside { display: block; float: left; margin-right: 2.35765%; width: 23.23176%; }
-section aside:last-child { margin-right: 0; }
-section article { display: block; float: left; margin-right: 2.35765%; width: 74.41059%; }
-section article:last-child { margin-right: 0; }
-@media screen and (min-width: 1200px) { section { background: black; } }
-@media screen and (max-width: 789px) { section { background: pink; }
-  section aside { display: block; float: left; margin-right: 2.35765%; width: 48.82117%; }
-  section aside:last-child { margin-right: 0; }
-  section article { display: block; float: left; margin-right: 2.35765%; width: 48.82117%; }
-  section article:last-child { margin-right: 0; } }
-@media screen and (max-width: 480px) { section { background: green; }
-  section aside { display: block; float: left; margin-right: 2.35765%; width: 100%; }
-  section aside:last-child { margin-right: 0; }
-  section article { display: block; float: left; margin-right: 2.35765%; width: 100%; }
-  section article:last-child { margin-right: 0; } }
-
-section#second { max-width: 68em; margin-left: auto; margin-right: auto; }
-section#second:before, section#second:after { content: " "; /* 1 */ display: table; /* 2 */ }
-section#second:after { clear: both; }
-section#second aside { display: block; float: left; margin-right: 2.35765%; width: 48.82117%; }
-section#second aside:last-child { margin-right: 0; }
-section#second article { display: block; float: left; margin-right: 2.35765%; width: 48.82117%; }
-section#second article:last-child { margin-right: 0; }
-@media screen and (min-width: 1200px) { section#second { background: black; } }
-@media screen and (max-width: 789px) { section#second { background: pink; }
-  section#second aside { display: block; float: left; margin-right: 2.35765%; width: 6.17215%; }
-  section#second aside:last-child { margin-right: 0; }
-  section#second article { display: block; float: left; margin-right: 2.35765%; width: 91.4702%; }
-  section#second article:last-child { margin-right: 0; } }
-@media screen and (max-width: 480px) { section#second { background: green; }
-  section#second aside { display: block; float: left; margin-right: 2.35765%; width: 100%; }
-  section#second aside:last-child { margin-right: 0; }
-  section#second article { display: block; float: left; margin-right: 2.35765%; width: 100%; }
-  section#second article:last-child { margin-right: 0; } }
-
-::selection { background: rgba(255, 255, 255, 0.9); color: #111111; text-shadow: none; }
+::selection { text-shadow: none; }
 
 html, body, *, input, textarea { -webkit-font-smoothing: antialiased; }
 
-html, body { height: 100%; width: 100%; color: #111111; font-family: "Lato" , Arial; }
+html, body { height: 100%; width: 100%; font-family: "Open Sans" , Arial; }
+
+body { font-size: 1em; }
+
+a { text-decoration: none; color: #573d7d; }
+a:hover { color: #271c38; text-decoration: none; }
+
+mark { background: #573d7d; color: #a8c282; }
+
+h1, h2, h3, h4, h5, h6 { font-family: "Open Sans" , Arial; color: #573d7d; }
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: #573d7d; }
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color: #271c38; }
+
+article ul { list-style: none; }
+article ul > li { position: relative; }
+article ul > li:before { border-radius: 50%; content: ""; display: inline-block; width: 7px; height: 7px; background: #573d7d; position: absolute; left: -18px; top: 9px; }
+
+section#show { max-width: 100%; margin-left: auto; margin-right: auto; background: red; }
+section#show:before, section#show:after { content: " "; /* 1 */ display: table; /* 2 */ }
+section#show:after { clear: both; }
+section#show aside { display: block; float: left; margin-right: 2.35765%; width: 23.23176%; }
+section#show aside:last-child { margin-right: 0; }
+section#show article { display: block; float: left; margin-right: 2.35765%; width: 74.41059%; }
+section#show article:last-child { margin-right: 0; }
+@media screen and (min-width: 1200px) { section#show { background: black; } }
+@media screen and (max-width: 789px) { section#show { background: pink; }
+  section#show aside { display: block; float: left; margin-right: 2.35765%; width: 48.82117%; }
+  section#show aside:last-child { margin-right: 0; }
+  section#show article { display: block; float: left; margin-right: 2.35765%; width: 48.82117%; }
+  section#show article:last-child { margin-right: 0; } }
+@media screen and (max-width: 480px) { section#show { background: green; }
+  section#show aside { display: block; float: left; margin-right: 2.35765%; width: 100%; }
+  section#show aside:last-child { margin-right: 0; }
+  section#show article { display: block; float: left; margin-right: 2.35765%; width: 100%; }
+  section#show article:last-child { margin-right: 0; } }
+
+section#elements { max-width: 100%; margin-left: auto; margin-right: auto; }
+section#elements:before, section#elements:after { content: " "; /* 1 */ display: table; /* 2 */ }
+section#elements:after { clear: both; }
+section#elements > main { display: block; float: left; margin-right: 2.35765%; width: 74.41059%; padding: 2.35765%; }
+section#elements > main:last-child { margin-right: 0; }
+section#elements > aside { display: block; float: left; margin-right: 2.35765%; width: 23.23176%; padding: 2.35765%; }
+section#elements > aside:last-child { margin-right: 0; }
+@media screen and (min-width: 1200px) { section#elements > main { display: block; float: left; margin-right: 2.35765%; width: 82.94039%; }
+  section#elements > main:last-child { margin-right: 0; }
+  section#elements > aside { display: block; float: left; margin-right: 2.35765%; width: 14.70196%; }
+  section#elements > aside:last-child { margin-right: 0; } }
+@media screen and (max-width: 789px) { section#elements > main { display: block; float: left; margin-right: 2.35765%; width: 65.88078%; }
+  section#elements > main:last-child { margin-right: 0; }
+  section#elements > aside { display: block; float: left; margin-right: 2.35765%; width: 31.76157%; }
+  section#elements > aside:last-child { margin-right: 0; } }
+@media screen and (max-width: 480px) { section#elements > main { width: 100%; padding: 2.35765%; }
+  section#elements > aside { width: 100%; padding: 2.35765%; } }

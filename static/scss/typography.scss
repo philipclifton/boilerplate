@@ -1,0 +1,49 @@
+
+body {
+    font-size: $fontSize;
+}
+
+a {
+    text-decoration: none;
+    color:$linkColor;
+    &:hover {
+        color: $linkHoverColor;
+        text-decoration: none;
+    }
+}
+
+mark {
+    background:$linkColor;
+    color:invert($linkColor);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Open Sans" , Arial;
+    color:$headerColor;
+    a {
+        color:$headerLinkColor;
+        &:hover {
+            color:$headerLinkHoverColor;
+        }
+    }
+}
+
+article {
+    ul {
+        list-style: none;
+        > li {
+            position: relative;
+            &:before {
+                border-radius: 50%;
+                content: "";
+                display: inline-block;
+                width: 7px;
+                height: 7px;
+                background:$linkColor;
+                position: absolute;
+                left: -18px;
+                top:9px;
+            }
+        }
+    }
+}
