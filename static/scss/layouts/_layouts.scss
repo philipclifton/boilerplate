@@ -57,3 +57,13 @@ section#elements {
 	}
 }
 
+section#first {
+	@include outer-container;
+	background:black;
+	aside {
+		@include span-columns (6);
+	}
+	article {
+		@include span-columns (6);
+	}
+}

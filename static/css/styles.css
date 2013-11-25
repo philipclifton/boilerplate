@@ -316,3 +316,11 @@ section#elements > aside:last-child { margin-right: 0; }
   section#elements > aside:last-child { margin-right: 0; } }
 @media screen and (max-width: 480px) { section#elements > main { width: 100%; padding: 2.35765%; }
   section#elements > aside { width: 100%; padding: 2.35765%; } }
+
+section#first { max-width: 100%; margin-left: auto; margin-right: auto; background: black; }
+section#first:before, section#first:after { content: " "; /* 1 */ display: table; /* 2 */ }
+section#first:after { clear: both; }
+section#first aside { display: block; float: left; margin-right: 2.35765%; width: 48.82117%; }
+section#first aside:last-child { margin-right: 0; }
+section#first article { display: block; float: left; margin-right: 2.35765%; width: 48.82117%; }
+section#first article:last-child { margin-right: 0; }

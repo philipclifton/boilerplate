@@ -2,3 +2,27 @@ $mobile: new-breakpoint(max-width 480px);
 $tablet: new-breakpoint(max-width 789px);
 $desktop: new-breakpoint(max-width 991px);
 $cinema: new-breakpoint(min-width 1200px);
+
+@mixin mobile {
+	@include media($mobile) {
+		@content;
+	}
+}
+
+@mixin tablet {
+	@include media($tablet) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@include media($desktop) {
+		@content;
+	}
+}
+
+@mixin cinema {
+	@include media($cinema) {
+		@content;
+	}
+}
