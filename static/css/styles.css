@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
 * { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary { display: block; }
@@ -280,47 +280,47 @@ article ul { list-style: none; }
 article ul > li { position: relative; }
 article ul > li:before { border-radius: 50%; content: ""; display: inline-block; width: 7px; height: 7px; background: #573d7d; position: absolute; left: -18px; top: 9px; }
 
-section#show { max-width: 100%; margin-left: auto; margin-right: auto; background: red; }
+section#show { max-width: 68em; margin-left: auto; margin-right: auto; background: red; }
 section#show:before, section#show:after { content: " "; /* 1 */ display: table; /* 2 */ }
 section#show:after { clear: both; }
-section#show aside { display: block; float: left; margin-right: 2.35765%; width: 23.23176%; }
+section#show aside { display: block; float: left; margin-right: 3.66764%; width: 22.24927%; }
 section#show aside:last-child { margin-right: 0; }
-section#show article { display: block; float: left; margin-right: 2.35765%; width: 74.41059%; }
+section#show article { display: block; float: left; margin-right: 3.66764%; width: 74.08309%; }
 section#show article:last-child { margin-right: 0; }
-@media screen and (min-width: 1200px) { section#show { background: black; } }
-@media screen and (max-width: 789px) { section#show { background: pink; }
-  section#show aside { display: block; float: left; margin-right: 2.35765%; width: 48.82117%; }
+@media screen and (min-width: new-breakpoint(min-width 1200px)) { section#show { background: black; } }
+@media screen and (min-width: new-breakpoint(max-width 789px)) { section#show { background: pink; }
+  section#show aside { display: block; float: left; margin-right: 3.66764%; width: 48.16618%; }
   section#show aside:last-child { margin-right: 0; }
-  section#show article { display: block; float: left; margin-right: 2.35765%; width: 48.82117%; }
+  section#show article { display: block; float: left; margin-right: 3.66764%; width: 48.16618%; }
   section#show article:last-child { margin-right: 0; } }
-@media screen and (max-width: 480px) { section#show { background: green; }
-  section#show aside { display: block; float: left; margin-right: 2.35765%; width: 100%; }
+@media screen and (min-width: new-breakpoint(max-width 480px)) { section#show { background: green; }
+  section#show aside { display: block; float: left; margin-right: 3.66764%; width: 100%; }
   section#show aside:last-child { margin-right: 0; }
-  section#show article { display: block; float: left; margin-right: 2.35765%; width: 100%; }
+  section#show article { display: block; float: left; margin-right: 3.66764%; width: 100%; }
   section#show article:last-child { margin-right: 0; } }
 
-section#elements { max-width: 100%; margin-left: auto; margin-right: auto; }
+section#elements { max-width: 68em; margin-left: auto; margin-right: auto; }
 section#elements:before, section#elements:after { content: " "; /* 1 */ display: table; /* 2 */ }
 section#elements:after { clear: both; }
-section#elements > main { display: block; float: left; margin-right: 2.35765%; width: 74.41059%; padding: 2.35765%; }
+section#elements > main { display: block; float: left; margin-right: 3.66764%; width: 74.08309%; padding: 3.66764%; }
 section#elements > main:last-child { margin-right: 0; }
-section#elements > aside { display: block; float: left; margin-right: 2.35765%; width: 23.23176%; padding: 2.35765%; }
+section#elements > aside { display: block; float: left; margin-right: 3.66764%; width: 22.24927%; padding: 3.66764%; }
 section#elements > aside:last-child { margin-right: 0; }
-@media screen and (min-width: 1200px) { section#elements > main { display: block; float: left; margin-right: 2.35765%; width: 82.94039%; }
+@media screen and (min-width: new-breakpoint(min-width 1200px)) { section#elements > main { display: block; float: left; margin-right: 3.66764%; width: 82.72206%; }
   section#elements > main:last-child { margin-right: 0; }
-  section#elements > aside { display: block; float: left; margin-right: 2.35765%; width: 14.70196%; }
+  section#elements > aside { display: block; float: left; margin-right: 3.66764%; width: 13.6103%; }
   section#elements > aside:last-child { margin-right: 0; } }
-@media screen and (max-width: 789px) { section#elements > main { display: block; float: left; margin-right: 2.35765%; width: 65.88078%; }
+@media screen and (min-width: new-breakpoint(max-width 789px)) { section#elements > main { display: block; float: left; margin-right: 3.66764%; width: 65.44412%; }
   section#elements > main:last-child { margin-right: 0; }
-  section#elements > aside { display: block; float: left; margin-right: 2.35765%; width: 31.76157%; }
+  section#elements > aside { display: block; float: left; margin-right: 3.66764%; width: 30.88824%; }
   section#elements > aside:last-child { margin-right: 0; } }
-@media screen and (max-width: 480px) { section#elements > main { width: 100%; padding: 2.35765%; }
-  section#elements > aside { width: 100%; padding: 2.35765%; } }
+@media screen and (min-width: new-breakpoint(max-width 480px)) { section#elements > main { width: 100%; padding: 3.66764%; }
+  section#elements > aside { width: 100%; padding: 3.66764%; } }
 
-section#first { max-width: 100%; margin-left: auto; margin-right: auto; background: black; }
+section#first { max-width: 68em; margin-left: auto; margin-right: auto; background: black; }
 section#first:before, section#first:after { content: " "; /* 1 */ display: table; /* 2 */ }
 section#first:after { clear: both; }
-section#first aside { display: block; float: left; margin-right: 2.35765%; width: 48.82117%; }
+section#first aside { display: block; float: left; margin-right: 3.66764%; width: 48.16618%; }
 section#first aside:last-child { margin-right: 0; }
-section#first article { display: block; float: left; margin-right: 2.35765%; width: 48.82117%; }
+section#first article { display: block; float: left; margin-right: 3.66764%; width: 48.16618%; }
 section#first article:last-child { margin-right: 0; }
