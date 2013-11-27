@@ -1,9 +1,10 @@
+$headerHeight: 120px;
 
-header[role=top] {
+%header {
 	@include outer-container;
+	height: $headerHeight;
 	h1 {
 		@include span-columns(3);
-		@include pad();
 	}
 	nav {
 		@include span-columns(9);
@@ -12,7 +13,6 @@ header[role=top] {
 			@extend %navList;
 			li {
 				a {
-					color:white;
 					padding: 20px;
 				}
 			}
@@ -43,6 +43,20 @@ header[role=top] {
 				@include stackedList;
 			}
 		}
+	}
+}
+
+header[role=top], footer {
+	@extend %header;
+	background:$highlight;
+	h1 {
+		color:white;
+		line-height: $headerHeight;
+		margin: 0;
+		padding: 0;
+	}
+	a {
+		color:white;
 	}
 }
 
