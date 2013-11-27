@@ -1,0 +1,114 @@
+%centerList {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    > li {
+        display: inline-block;
+    }
+}
+
+@mixin centerList {
+    list-style: none;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    > li {
+        display: inline-block;
+    }
+}
+
+%inlineList {
+	list-style: none;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	> li, > ol {
+		display: inline-block;
+	}
+}
+
+@mixin inlineList {
+	list-style: none;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	> li, > ol {
+		display: inline-block;
+	}
+}
+
+
+%leftFloatList {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	> li, > ol {
+		float: left;
+	}
+}
+
+@mixin leftFloatList {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	> li, > ol {
+		float: left;
+	}
+}
+
+%navList {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	> li, > ol {
+		float: left;
+		a {
+			display: block;
+		}
+	}
+}
+
+@mixin navList {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	> li, > ol {
+		float: left;
+		a {
+			display: block;
+		}
+	}
+}
+
+%stackedList {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: none;
+	> li, > ol {
+		float: none;
+		display: block;
+		a {
+			display: block;
+		}
+	}
+}
+
+@mixin stackedList {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	overflow: none;
+	> li, > ol {
+		float: none;
+		display: block;
+		a {
+			display: block;
+		}
+	}
+}

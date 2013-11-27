@@ -1,9 +1,8 @@
-
-
-// Frameworks
 @import 'vendor/bourbon/bourbon';
-@import 'vars/vars';
+@import 'vars/sizes';
 @import 'vendor/neat/neat';
+@import 'vars/jumps';
+@import 'vars/colors';
 
 // 3rd-Party Libs
 @import 'extras/extras';
@@ -30,5 +29,4 @@ html, body {
 @import 'includes/header',
         'includes/footer',
         'includes/sidebar';
-
 

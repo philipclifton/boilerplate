@@ -1,5 +1,8 @@
 
-$linkColor: #573D7D;
+$highlight : #573D7D;
+$highlightInvert: white;
+
+$linkColor: $highlight;
 $linkHoverColor: darken($linkColor, 20);
 
 $headerColor: $linkColor;

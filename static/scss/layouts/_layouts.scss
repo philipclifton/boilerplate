@@ -1,25 +1,52 @@
 
-section#show {
+header[role=top] {
 	@include outer-container;
-	aside { @include span-columns(3); }
-	article { @include span-columns(9); }
-	background:red;
-	@include media($cinema){
-		background:black;
+	h1 {
+		@include span-columns(3);
+		@include pad();
 	}
-	@include media($tablet){
-		background:pink;
-		aside { @include span-columns(6); }
-		article { @include span-columns(6); }
+	nav {
+		@include span-columns(9);
+		@include pad();
+		ul {
+			@extend %navList;
+			li {
+				a {
+					color:white;
+					padding: 20px;
+				}
+			}
+		}
 	}
-	@include media($mobile) {
-		background:green;
-		aside { @include span-columns(12); }
-		article { @include span-columns(12); }
+	/**
+	 * Tablet View Port
+	 */
+	@include tablet {
+		h1 {
+			@include span-columns(4);
+		}
+		nav {
+			@include span-columns(8);
+		}
+	}
+	/**
+	 * Mobile View Port
+	 */
+	@include mobile {
+		h1 {
+			@include span-columns(12);
+			text-align: center;
+		}
+		nav {
+			@include span-columns(12);
+			ul {
+				@include stackedList;
+			}
+		}
 	}
 }
 
-section#elements {
+.layout {
 	@include outer-container;
 	> main {
 		@include span-columns(9);
@@ -29,15 +56,10 @@ section#elements {
 		@include span-columns(3);
 		@include pad();
 	}
-	@include media($cinema) {
-		> main {
-			@include span-columns(10);
-		}
-		> aside {
-			@include span-columns(2);
-		}
-	}
-	@include media($tablet) {
+	/**
+	 * Tablet View Port
+	 */
+	@include tablet {
 		> main {
 			@include span-columns(8);
 		}
@@ -45,7 +67,10 @@ section#elements {
 			@include span-columns(4);
 		}
 	}
-	@include media($mobile) {
+	/**
+	 * Mobile View Port
+	 */
+	@include mobile {
 		> main {
 			@include fill-parent;
 			@include pad();
@@ -57,13 +82,3 @@ section#elements {
 	}
 }
 
-section#first {
-	@include outer-container;
-	background:black;
-	aside {
-		@include span-columns (6);
-	}
-	article {
-		@include span-columns (6);
-	}
-}
