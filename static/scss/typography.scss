@@ -28,6 +28,61 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
+$largestHeaderFontSize : 30px;
+$ratio : 1.2;
+$golden:false;
+
+h1 {
+    @if($golden) {
+        font-size:  ceil( golden-ratio($largestHeaderFontSize, 0) );
+    } @else {
+        font-size:  ceil( modular-scale($largestHeaderFontSize, 0, $ratio) );
+    }
+}
+h2 {
+    @if($golden) {
+        font-size:  ceil( golden-ratio($largestHeaderFontSize, -1) );
+    } @else {
+        font-size:  ceil( modular-scale($largestHeaderFontSize, -1, $ratio) );
+    }
+}
+h3 {
+    @if($golden) {
+        font-size:  ceil( golden-ratio($largestHeaderFontSize, -2) );
+    } @else {
+        font-size:  ceil( modular-scale($largestHeaderFontSize, -2, $ratio) );
+    }
+}
+h4 {
+    @if($golden) {
+        font-size:  ceil( golden-ratio($largestHeaderFontSize, -3) );
+    } @else {
+        font-size:  ceil( modular-scale($largestHeaderFontSize, -3, $ratio) );
+    }
+}
+h5 {
+    @if($golden) {
+        font-size:  ceil( golden-ratio($largestHeaderFontSize, -4) );
+    } @else {
+        font-size:  ceil( modular-scale($largestHeaderFontSize, -4, $ratio) );
+    }
+}
+h5 {
+    @if($golden) {
+        font-size:  ceil( golden-ratio($largestHeaderFontSize, -5) );
+    } @else {
+        font-size:  ceil( modular-scale($largestHeaderFontSize, -5, $ratio) );
+    }
+}
+h6 {
+    @if($golden) {
+        font-size:  ceil( golden-ratio($largestHeaderFontSize, -6) );
+    } @else {
+        font-size:  ceil( modular-scale($largestHeaderFontSize, -6, $ratio) );
+    }
+}
+
+
 article {
     ul {
         list-style: none;

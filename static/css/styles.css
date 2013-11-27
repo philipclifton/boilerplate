@@ -276,6 +276,20 @@ h1, h2, h3, h4, h5, h6 { font-family: "Open Sans" , Arial; color: #573d7d; }
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color: #573d7d; }
 h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover { color: #271c38; }
 
+h1 { font-size: 30px; }
+
+h2 { font-size: 25px; }
+
+h3 { font-size: 21px; }
+
+h4 { font-size: 18px; }
+
+h5 { font-size: 15px; }
+
+h5 { font-size: 13px; }
+
+h6 { font-size: 11px; }
+
 article ul { list-style: none; }
 article ul > li { position: relative; }
 article ul > li:before { border-radius: 50%; content: ""; display: inline-block; width: 7px; height: 7px; background: #573d7d; position: absolute; left: -18px; top: 9px; }
